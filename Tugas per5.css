@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(22, 21, 21);
+}
+
+.container {
+    width: 500px;
+    background: rgb(110, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    background: black;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; /* Membuat logo memenuhi lebar container */
+    height: 100px; /* Sesuaikan tinggi kotak */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Mencegah gambar keluar dari kotak */
+}
+
+.logo img {
+    width: 100%; /* Membuat gambar melebar sesuai dengan lebar kotak */
+    height: 100%; /* Membuat gambar memenuhi tinggi kotak */
+    object-fit: contain; /* Memastikan gambar menyesuaikan tanpa merusak aspek rasio */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background: black; /* Ubah warna latar belakang menu di sini */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu label {
+    color: #FFD700; /* Ubah warna teks menu di sini */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.menu label:hover {
+    text-decoration: underline;
+    background: red; /* Ubah warna latar belakang saat hover di sini */
+    color: black; /* Warna teks saat hover */
+    border-radius: 5px; /* Efek rounded */
+    padding: 5px 10px;
+}
+
+.menu button {
+    color: black; /* Ubah warna teks menu di sini */
+    background: rgb(177, 1, 1);
+    font-weight: bold;
+}
+
+#konten {
+    font-family: "Times New Roman", serif; /* Mengubah jenis font */
+    font-size: 18px; /* Mengatur ukuran font */
+    color: red; /* Mengubah warna teks */
+    text-align: justify; /* Membuat teks rata kiri dan kanan */
+    line-height: 1.5; /* Menambah jarak antar baris */
+    padding: 10px; /* Menambah ruang di sekitar teks */
+    background: rgba(0, 0, 0, 0.753); /* Menambah sedikit transparansi */
+    border-radius: 10px; /* Membuat sudut elemen lebih halus */
+}
+
+h2 {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+}
+
+#menu1:checked ~ .content #content1 {
+    display: block;
+}
+
+#menu2:checked ~ .content #content2 {
+    display: block;
+}
+
+#menu3:checked ~ .content #content3 {
+    display: block;
+}
+
+.gallery {
+    background: gray;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 100%; /* Membuat gallery memenuhi lebar container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Mencegah gambar keluar dari kotak */
+}
+
+.gallery img {
+    width: 100%; /* Membuat gambar melebar sesuai dengan lebar kotak */
+    height: auto; /* Mengubah agar sesuai tinggi secara proporsional */
+    object-fit: contain; /* Menjaga rasio gambar */
+}

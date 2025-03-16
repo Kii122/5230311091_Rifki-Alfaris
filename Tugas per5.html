@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tugas per5.css">
+    <title>Tampilan Web</title>
+    <script>
+        function tampilkanParagraf(menu) {
+            const isi = {
+                menu1: "Dandadan adalah manga karya Yukinobu Tatsu yang menggabungkan aksi, supranatural, dan romansa dalam cerita yang penuh kejutan. Kisah ini mengikuti Momo Ayase dan Okarun, dua siswa SMA yang awalnya tidak percaya pada dunia satu sama lain—Momo percaya pada hantu, sementara Okarun percaya pada alien. Namun, kehidupan mereka berubah drastis ketika mereka bertemu dengan fenomena gaib dan makhluk luar angkasa yang benar-benar nyata. Dengan gaya seni yang dinamis dan cerita yang penuh humor serta ketegangan, Dandadan menawarkan pengalaman yang unik bagi para pembaca.",
+                menu2: `Anime Dandadan menghadirkan karakter-karakter unik yang membuat ceritanya semakin seru:
+                1.Momo Ayase: Seorang gadis pemberani yang memiliki kemampuan spiritual setelah bertemu dengan makhluk gaib.
+                2.Ken Takakura (Okarun): Seorang otaku yang awalnya skeptis terhadap fenomena supranatural, namun akhirnya mendapatkan kekuatan super setelah insiden dengan alien.
+                3.Turbo Granny: Roh jahat yang awalnya menjadi musuh, tetapi kemudian memberikan kekuatan luar biasa kepada Okarun.
+                4.Seiko Ayase: Nenek Momo yang memiliki kemampuan spiritual tingkat tinggi dan menjadi mentor mereka dalam menghadapi ancaman gaib.
+                Kombinasi kepribadian mereka yang berbeda menciptakan dinamika yang menarik dan menghibur.`,
+                menu3: "Salah satu daya tarik utama Dandadan adalah perpaduan unik antara horor, aksi, komedi, dan romansa. Manga ini tidak hanya menampilkan pertempuran melawan makhluk gaib dan alien, tetapi juga mengeksplorasi hubungan antara para karakter dengan cara yang emosional dan menyentuh. Selain itu, gaya ilustrasi Yukinobu Tatsu yang ekspresif dan penuh energi membuat setiap adegan terasa hidup. Dengan kecepatan cerita yang cepat dan elemen kejutan yang tidak terduga, Dandadan berhasil menjadi salah satu serial yang sangat digemari di kalangan penggemar."
+            };
+            document.getElementById('konten').innerText = isi[menu];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://i.ibb.co.com/RkSsBK91/Dan-Da-Dan-Remove.png" alt="Dan Da Dan Anime Logo PNG">
+        </div>
+        <div class="menu">
+            <button onclick="tampilkanParagraf('menu1')">Latar Belakang</button>
+            <button onclick="tampilkanParagraf('menu2')">Karakter Utama</button>
+            <button onclick="tampilkanParagraf('menu3')">Daya Tarik</button>
+        </div>
+        <div class="header">
+            <h2>DANDADAN</h2>
+            <div id="konten">Setelah ditolak secara agresif, Momo Ayase menemukan dirinya merajuk ketika dia tersandung di seorang anak yang diganggu. Diselamatkan oleh kebaikannya yang ruam, anak laki-laki yang terobsesi alien itu berusaha untuk berbicara dengannya tentang kepentingan luar angkasa yang dia percaya mereka berbagi. Menolak klaimnya, Ayase menyatakan bahwa dia malah percaya pada hantu, memulai argumen antara keduanya yang nyata. Dalam taruhan untuk menentukan siapa yang benar, keduanya memutuskan untuk secara terpisah mengunjungi lokasi yang terkait dengan makhluk luar angkasa dan supranatural Ayase mengunjungi mantan dan anak laki-laki yang mengunjungi yang terakhir. Ketika keduanya mencapai tempat masing-masing, ternyata tidak ada yang salah dan bahwa baik alien dan hantu memang ada. Ini menandai awal dari Ayase dan petualangan anak itu, karena mereka mencoba memperbaiki elemen surealis, supranatural, dan luar angkasa di sekitar mereka untuk kembali ke kehidupan normal.</div>
+        </div>
+        <div class="gallery">
+            <img src="https://i.ibb.co.com/C57qNSxX/Momo-Ken-Seiko.jpg" alt="Gambar Gallery">
+        </div>
+    </div>
+</body>
+</html>
