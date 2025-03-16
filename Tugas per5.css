@@ -26,31 +26,31 @@ body {
     background: black;
     border-radius: 10px;
     text-align: center;
-    width: 100%; /* Membuat logo memenuhi lebar container */
-    height: 100px; /* Sesuaikan tinggi kotak */
+    width: 100%; 
+    height: 100px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Mencegah gambar keluar dari kotak */
+    overflow: hidden; 
 }
 
 .logo img {
-    width: 100%; /* Membuat gambar melebar sesuai dengan lebar kotak */
-    height: 100%; /* Membuat gambar memenuhi tinggi kotak */
-    object-fit: contain; /* Memastikan gambar menyesuaikan tanpa merusak aspek rasio */
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    background: black; /* Ubah warna latar belakang menu di sini */
+    background: black; 
     margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
 }
 
 .menu label {
-    color: #FFD700; /* Ubah warna teks menu di sini */
+    color: #FFD700; 
     font-weight: bold;
     cursor: pointer;
     padding: 10px 10px;
@@ -58,27 +58,27 @@ body {
 
 .menu label:hover {
     text-decoration: underline;
-    background: red; /* Ubah warna latar belakang saat hover di sini */
-    color: black; /* Warna teks saat hover */
-    border-radius: 5px; /* Efek rounded */
+    background: red; 
+    color: black; 
+    border-radius: 5px; 
     padding: 5px 10px;
 }
 
 .menu button {
-    color: black; /* Ubah warna teks menu di sini */
+    color: black; 
     background: rgb(177, 1, 1);
     font-weight: bold;
 }
 
 #konten {
-    font-family: "Times New Roman", serif; /* Mengubah jenis font */
-    font-size: 18px; /* Mengatur ukuran font */
-    color: red; /* Mengubah warna teks */
-    text-align: justify; /* Membuat teks rata kiri dan kanan */
-    line-height: 1.5; /* Menambah jarak antar baris */
-    padding: 10px; /* Menambah ruang di sekitar teks */
-    background: rgba(0, 0, 0, 0.753); /* Menambah sedikit transparansi */
-    border-radius: 10px; /* Membuat sudut elemen lebih halus */
+    font-family: "Times New Roman", serif; 
+    font-size: 18px; 
+    color: red; 
+    text-align: justify; 
+    line-height: 1.5; 
+    padding: 10px; 
+    background: rgba(0, 0, 0, 0.753); 
+    border-radius: 10px; 
 }
 
 h2 {
@@ -104,15 +104,15 @@ h2 {
     text-align: center;
     border-radius: 15px;
     margin-top: 20px;
-    width: 100%; /* Membuat gallery memenuhi lebar container */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Mencegah gambar keluar dari kotak */
+    overflow: hidden;
 }
 
 .gallery img {
-    width: 100%; /* Membuat gambar melebar sesuai dengan lebar kotak */
-    height: auto; /* Mengubah agar sesuai tinggi secara proporsional */
-    object-fit: contain; /* Menjaga rasio gambar */
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
 }
