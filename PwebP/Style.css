@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px 40px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+table:hover {
+    box-shadow: 0 10px 25px rgba(44, 62, 80, 0.2);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e1e8ee;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfc;
+}
+
+tbody tr:hover {
+    background-color: #d0e8ff;
+    cursor: pointer;
+}
+
+td a {
+    color: #2980b9;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+td a:hover {
+    color: #1c5980;
+    transform: scale(1.1);
+}
+
+form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.1);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 15px 0 8px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1.8px solid #bdc3c7;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px #3498dbaa;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+}
+
+input[type="submit"]:hover {
+    background-color: #217dbb;
+}
+
+input[type="reset"]:hover {
+    background-color: #b73227;
+}
+
+.mahasiswa-card {
+    background: white;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(44, 62, 80, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.mahasiswa-card:hover {
+    box-shadow: 0 12px 28px rgba(44, 62, 80, 0.2);
+}
+
+.mahasiswa-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 30px auto;
+    text-align: center;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #217dbb;
+    box-shadow: 0 8px 20px rgba(33, 125, 187, 0.6);
+}
+
+@media (max-width: 768px) {
+    table, form {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .mahasiswa-card {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+
